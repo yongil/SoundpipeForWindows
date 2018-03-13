@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{278C07D4-C722-4B5F-BFC7-A96702995B22}</ProjectGuid>
+    <RootNamespace>Test01</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../Soundpipe/h;../Soundpipe/lib/faust;../libsndfile/x86/include;../Soundpipe/lib/kissfft;../Soundpipe/lib/openlpc;../Soundpipe/lib/inih;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <CallingConvention>Cdecl</CallingConvention>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libsndfile-1.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../libsndfile/x86/lib;../Soundpipe/lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../Soundpipe/h;../Soundpipe/lib/faust;../libsndfile/x64/include;../Soundpipe/lib/kissfft;../Soundpipe/lib/openlpc;../Soundpipe/lib/inih;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libsndfile-1.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../libsndfile/x64/lib;../Soundpipe/lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../Soundpipe/h;../Soundpipe/lib/faust;../libsndfile/include;../Soundpipe/lib/kissfft;../Soundpipe/lib/openlpc;../Soundpipe/lib/inih;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libsndfile-1.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../libsndfile/lib;../Soundpipe/lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../Soundpipe/h;../Soundpipe/lib/faust;../libsndfile/include;../Soundpipe/lib/kissfft;../Soundpipe/lib/openlpc;../Soundpipe/lib/inih;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libsndfile-1.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../libsndfile/lib;../Soundpipe/lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Soundpipe\lib\fft\fftlib.c" />
+    <ClCompile Include="..\Soundpipe\lib\fft\sp_fft.c" />
+    <ClCompile Include="..\Soundpipe\lib\inih\ini.c" />
+    <ClCompile Include="..\Soundpipe\lib\kissfft\kiss_fft.c" />
+    <ClCompile Include="..\Soundpipe\lib\kissfft\kiss_fftr.c" />
+    <ClCompile Include="..\Soundpipe\lib\openlpc\openlpc.c" />
+    <ClCompile Include="..\Soundpipe\lib\spa\spa2.c" />
+    <ClCompile Include="..\Soundpipe\modules\adsr.c" />
+    <ClCompile Include="..\Soundpipe\modules\allpass.c" />
+    <ClCompile Include="..\Soundpipe\modules\atone.c" />
+    <ClCompile Include="..\Soundpipe\modules\autowah.c" />
+    <ClCompile Include="..\Soundpipe\modules\bal.c" />
+    <ClCompile Include="..\Soundpipe\modules\bar.c" />
+    <ClCompile Include="..\Soundpipe\modules\base.c" />
+    <ClCompile Include="..\Soundpipe\modules\biquad.c" />
+    <ClCompile Include="..\Soundpipe\modules\biscale.c" />
+    <ClCompile Include="..\Soundpipe\modules\bitcrush.c" />
+    <ClCompile Include="..\Soundpipe\modules\blsaw.c" />
+    <ClCompile Include="..\Soundpipe\modules\blsquare.c" />
+    <ClCompile Include="..\Soundpipe\modules\bltriangle.c" />
+    <ClCompile Include="..\Soundpipe\modules\brown.c" />
+    <ClCompile Include="..\Soundpipe\modules\butbp.c" />
+    <ClCompile Include="..\Soundpipe\modules\butbr.c" />
+    <ClCompile Include="..\Soundpipe\modules\buthp.c" />
+    <ClCompile Include="..\Soundpipe\modules\butlp.c" />
+    <ClCompile Include="..\Soundpipe\modules\clip.c" />
+    <ClCompile Include="..\Soundpipe\modules\clock.c" />
+    <ClCompile Include="..\Soundpipe\modules\comb.c" />
+    <ClCompile Include="..\Soundpipe\modules\compressor.c" />
+    <ClCompile Include="..\Soundpipe\modules\conv.c" />
+    <ClCompile Include="..\Soundpipe\modules\count.c" />
+    <ClCompile Include="..\Soundpipe\modules\crossfade.c" />
+    <ClCompile Include="..\Soundpipe\modules\dcblock.c" />
+    <ClCompile Include="..\Soundpipe\modules\delay.c" />
+    <ClCompile Include="..\Soundpipe\modules\diode.c" />
+    <ClCompile Include="..\Soundpipe\modules\diskin.c" />
+    <ClCompile Include="..\Soundpipe\modules\dist.c" />
+    <ClCompile Include="..\Soundpipe\modules\dmetro.c" />
+    <ClCompile Include="..\Soundpipe\modules\drip.c" />
+    <ClCompile Include="..\Soundpipe\modules\dtrig.c" />
+    <ClCompile Include="..\Soundpipe\modules\dust.c" />
+    <ClCompile Include="..\Soundpipe\modules\eqfil.c" />
+    <ClCompile Include="..\Soundpipe\modules\expon.c" />
+    <ClCompile Include="..\Soundpipe\modules\fftwrapper.c" />
+    <ClCompile Include="..\Soundpipe\modules\fof.c" />
+    <ClCompile Include="..\Soundpipe\modules\fofilt.c" />
+    <ClCompile Include="..\Soundpipe\modules\fog.c" />
+    <ClCompile Include="..\Soundpipe\modules\fold.c" />
+    <ClCompile Include="..\Soundpipe\modules\foo.c" />
+    <ClCompile Include="..\Soundpipe\modules\fosc.c" />
+    <ClCompile Include="..\Soundpipe\modules\ftbl.c" />
+    <ClCompile Include="..\Soundpipe\modules\gbuzz.c" />
+    <ClCompile Include="..\Soundpipe\modules\hilbert.c" />
+    <ClCompile Include="..\Soundpipe\modules\in.c" />
+    <ClCompile Include="..\Soundpipe\modules\incr.c" />
+    <ClCompile Include="..\Soundpipe\modules\jack.c" />
+    <ClCompile Include="..\Soundpipe\modules\jcrev.c" />
+    <ClCompile Include="..\Soundpipe\modules\jitter.c" />
+    <ClCompile Include="..\Soundpipe\modules\line.c" />
+    <ClCompile Include="..\Soundpipe\modules\lpc.c" />
+    <ClCompile Include="..\Soundpipe\modules\lpf18.c" />
+    <ClCompile Include="..\Soundpipe\modules\maygate.c" />
+    <ClCompile Include="..\Soundpipe\modules\metro.c" />
+    <ClCompile Include="..\Soundpipe\modules\mincer.c" />
+    <ClCompile Include="..\Soundpipe\modules\mode.c" />
+    <ClCompile Include="..\Soundpipe\modules\moogladder.c" />
+    <ClCompile Include="..\Soundpipe\modules\noise.c" />
+    <ClCompile Include="..\Soundpipe\modules\nsmp.c" />
+    <ClCompile Include="..\Soundpipe\modules\osc.c" />
+    <ClCompile Include="..\Soundpipe\modules\oscmorph.c" />
+    <ClCompile Include="..\Soundpipe\modules\padsynth.c" />
+    <ClCompile Include="..\Soundpipe\modules\pan2.c" />
+    <ClCompile Include="..\Soundpipe\modules\panst.c" />
+    <ClCompile Include="..\Soundpipe\modules\pareq.c" />
+    <ClCompile Include="..\Soundpipe\modules\paulstretch.c" />
+    <ClCompile Include="..\Soundpipe\modules\pdhalf.c" />
+    <ClCompile Include="..\Soundpipe\modules\peaklim.c" />
+    <ClCompile Include="..\Soundpipe\modules\phaser.c" />
+    <ClCompile Include="..\Soundpipe\modules\phasor.c" />
+    <ClCompile Include="..\Soundpipe\modules\pinknoise.c" />
+    <ClCompile Include="..\Soundpipe\modules\pitchamdf.c" />
+    <ClCompile Include="..\Soundpipe\modules\pluck.c" />
+    <ClCompile Include="..\Soundpipe\modules\port.c" />
+    <ClCompile Include="..\Soundpipe\modules\posc3.c" />
+    <ClCompile Include="..\Soundpipe\modules\progress.c" />
+    <ClCompile Include="..\Soundpipe\modules\prop.c" />
+    <ClCompile Include="..\Soundpipe\modules\pshift.c" />
+    <ClCompile Include="..\Soundpipe\modules\ptrack.c" />
+    <ClCompile Include="..\Soundpipe\modules\randh.c" />
+    <ClCompile Include="..\Soundpipe\modules\randi.c" />
+    <ClCompile Include="..\Soundpipe\modules\randmt.c" />
+    <ClCompile Include="..\Soundpipe\modules\random.c" />
+    <ClCompile Include="..\Soundpipe\modules\reson.c" />
+    <ClCompile Include="..\Soundpipe\modules\reverse.c" />
+    <ClCompile Include="..\Soundpipe\modules\revsc.c" />
+    <ClCompile Include="..\Soundpipe\modules\rms.c" />
+    <ClCompile Include="..\Soundpipe\modules\rpi.c" />
+    <ClCompile Include="..\Soundpipe\modules\rpt.c" />
+    <ClCompile Include="..\Soundpipe\modules\rspline.c" />
+    <ClCompile Include="..\Soundpipe\modules\samphold.c" />
+    <ClCompile Include="..\Soundpipe\modules\saturator.c" />
+    <ClCompile Include="..\Soundpipe\modules\scale.c" />
+    <ClCompile Include="..\Soundpipe\modules\scrambler.c" />
+    <ClCompile Include="..\Soundpipe\modules\sdelay.c" />
+    <ClCompile Include="..\Soundpipe\modules\slice.c" />
+    <ClCompile Include="..\Soundpipe\modules\smoothdelay.c" />
+    <ClCompile Include="..\Soundpipe\modules\spa.c" />
+    <ClCompile Include="..\Soundpipe\modules\sparec.c" />
+    <ClCompile Include="..\Soundpipe\modules\streson.c" />
+    <ClCompile Include="..\Soundpipe\modules\switch.c" />
+    <ClCompile Include="..\Soundpipe\modules\tabread.c" />
+    <ClCompile Include="..\Soundpipe\modules\tadsr.c" />
+    <ClCompile Include="..\Soundpipe\modules\talkbox.c" />
+    <ClCompile Include="..\Soundpipe\modules\tblrec.c" />
+    <ClCompile Include="..\Soundpipe\modules\tbvcf.c" />
+    <ClCompile Include="..\Soundpipe\modules\tdiv.c" />
+    <ClCompile Include="..\Soundpipe\modules\tenv.c" />
+    <ClCompile Include="..\Soundpipe\modules\tenv2.c" />
+    <ClCompile Include="..\Soundpipe\modules\tenvx.c" />
+    <ClCompile Include="..\Soundpipe\modules\tevent.c" />
+    <ClCompile Include="..\Soundpipe\modules\tgate.c" />
+    <ClCompile Include="..\Soundpipe\modules\thresh.c" />
+    <ClCompile Include="..\Soundpipe\modules\timer.c" />
+    <ClCompile Include="..\Soundpipe\modules\tin.c" />
+    <ClCompile Include="..\Soundpipe\modules\tone.c" />
+    <ClCompile Include="..\Soundpipe\modules\trand.c" />
+    <ClCompile Include="..\Soundpipe\modules\tseg.c" />
+    <ClCompile Include="..\Soundpipe\modules\tseq.c" />
+    <ClCompile Include="..\Soundpipe\modules\vdelay.c" />
+    <ClCompile Include="..\Soundpipe\modules\voc.c" />
+    <ClCompile Include="..\Soundpipe\modules\vocoder.c" />
+    <ClCompile Include="..\Soundpipe\modules\waveset.c" />
+    <ClCompile Include="..\Soundpipe\modules\wpkorg35.c" />
+    <ClCompile Include="..\Soundpipe\modules\zitarev.c" />
+    <ClCompile Include="main.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Soundpipe\h\soundpipe.h" />
+    <ClInclude Include="..\Soundpipe\lib\fft\fftlib.h" />
+    <ClInclude Include="..\Soundpipe\lib\inih\ini.h" />
+    <ClInclude Include="..\Soundpipe\lib\openlpc\ftol.h" />
+    <ClInclude Include="..\Soundpipe\lib\openlpc\openlpc.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\modules">
+      <UniqueIdentifier>{e11a38c5-642b-445e-83e3-69729be576f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\ExternalLib">
+      <UniqueIdentifier>{9c93322d-8465-45b9-8e39-fbcd344c7f80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\ExternalLib\fft">
+      <UniqueIdentifier>{68b3ccb7-de94-4d79-aaf4-4f635260f50a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\ExternalLib\kissfft">
+      <UniqueIdentifier>{a8a9ae62-ca5b-4ebe-a2fc-5aafc4427d00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\ExternalLib\openipc">
+      <UniqueIdentifier>{762d329f-3c1c-495b-b714-43731197d5df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\ExternalLib\spa">
+      <UniqueIdentifier>{d090fd6b-dd55-4689-b071-1663d0f42f26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\ExternalLib\inih">
+      <UniqueIdentifier>{291db4c9-00ce-471f-a2d8-883cc5aec499}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Soundpipe\modules\adsr.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\allpass.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\atone.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\autowah.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\bal.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\bar.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\base.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\biquad.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\biscale.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\bitcrush.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\blsaw.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\blsquare.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\bltriangle.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\brown.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\butbp.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\butbr.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\buthp.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\butlp.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\clip.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\clock.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\comb.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\compressor.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\conv.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\count.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\crossfade.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\dcblock.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\delay.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\diode.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\diskin.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\dist.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\dmetro.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\drip.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\dtrig.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\dust.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\eqfil.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\expon.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\fftwrapper.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\fof.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\fofilt.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\fog.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\fold.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\foo.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\fosc.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\ftbl.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\gbuzz.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\hilbert.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\in.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\incr.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\jack.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\jcrev.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\jitter.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\line.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\lpc.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\lpf18.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\maygate.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\metro.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\mincer.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\mode.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\moogladder.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\noise.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\nsmp.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\osc.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\oscmorph.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\padsynth.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\pan2.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\panst.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\pareq.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\paulstretch.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\pdhalf.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\peaklim.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\phaser.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\phasor.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\pinknoise.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\pitchamdf.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\pluck.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\port.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\posc3.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\progress.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\prop.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\pshift.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\ptrack.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\randh.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\randi.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\randmt.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\random.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\reson.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\reverse.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\revsc.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\rms.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\rpi.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\rpt.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\rspline.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\samphold.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\saturator.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\scale.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\scrambler.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\sdelay.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\slice.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\smoothdelay.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\spa.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\sparec.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\streson.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\switch.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\tabread.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\tadsr.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\talkbox.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\tblrec.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\tbvcf.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\tdiv.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\tenv.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\tenv2.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\tenvx.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\tevent.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\tgate.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\thresh.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\timer.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\tin.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\tone.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\trand.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\tseg.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\tseq.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\vdelay.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\voc.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\vocoder.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\waveset.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\wpkorg35.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\modules\zitarev.c">
+      <Filter>소스 파일\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\lib\fft\fftlib.c">
+      <Filter>소스 파일\ExternalLib\fft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\lib\fft\sp_fft.c">
+      <Filter>소스 파일\ExternalLib\fft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\lib\kissfft\kiss_fft.c">
+      <Filter>소스 파일\ExternalLib\kissfft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\lib\kissfft\kiss_fftr.c">
+      <Filter>소스 파일\ExternalLib\kissfft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\lib\openlpc\openlpc.c">
+      <Filter>소스 파일\ExternalLib\openipc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\lib\inih\ini.c">
+      <Filter>소스 파일\ExternalLib\inih</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Soundpipe\lib\spa\spa2.c">
+      <Filter>소스 파일\ExternalLib\spa</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Soundpipe\lib\fft\fftlib.h">
+      <Filter>소스 파일\ExternalLib\fft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Soundpipe\lib\openlpc\ftol.h">
+      <Filter>소스 파일\ExternalLib\openipc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Soundpipe\lib\openlpc\openlpc.h">
+      <Filter>소스 파일\ExternalLib\openipc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Soundpipe\lib\inih\ini.h">
+      <Filter>소스 파일\ExternalLib\inih</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Soundpipe\h\soundpipe.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
